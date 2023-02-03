@@ -1,0 +1,108 @@
+body.darkTheme{
+    background-color: hwb(0 7% 93%);
+}
+
+body.darkTheme header{
+    background-color:hsla(350, 92%, 40%, 0.25);
+    color:hwb(0 83% 17%);
+}
+
+body.darkTheme main{
+    border:1px black solid;
+
+    background-color:hwb(0 12% 93%);
+
+    color:hwb(0 83% 17%);
+
+    box-shadow: .25rem .25rem .5rem hwb(0 2% 93%);
+}
+
+body.darkTheme input,body.darkTheme select,body.darkTheme .outputScreen{
+    background-color:hwb(0 22% 93%) ;
+    color:hwb(0 83% 17%);
+
+}
+
+body.darkTheme .settings{
+    background-color:hwb(0 12% 93%);
+
+}
+
+body.darkTheme footer div{
+    color:hwb(0 75% 75%);
+
+}
+
+body.darkTheme .disabled{
+    color:hwb(0 83% 100%);
+
+}
+
+body.darkTheme #getCode{
+    background-color:hwb(0 2% 93% / 0.357);
+    border:black 1px solid;
+    color:hwb(0 83% 17%);
+
+
+}
+
+body.darkTheme .output-screen{
+    background-color:hwb(0 22% 93%);
+
+}
+
+body.darkTheme .theme{
+   filter: invert(100%); 
+}
+
+
+/* Hovers  */
+body.darkTheme label:hover{
+    font-weight: 500;
+    cursor:pointer;   
+    color:hwb(0 100% 17%);
+
+}
+
+body.darkTheme input:focus, body.darkTheme select:focus{
+    outline: hwb(0 13% 93%) 1px solid;   
+    box-shadow: .25rem .25rem .5rem hwb(0 2% 93%);
+
+    
+}
+
+body.darkTheme #getCode:hover{
+    font-weight: 500;
+    color:hwb(0 100% 17%);
+
+    outline: hwb(0 13% 87%) 1px solid;   
+    box-shadow: .25rem .25rem .5rem hwb(0 2% 93%);
+
+    cursor:pointer;
+
+}
+
+body.darkTheme .output-screen:hover{
+    outline: hwb(0 27% 93%) 1px solid;   
+    box-shadow: .25rem .25rem .5rem hwb(0 2% 93%);
+}
+
+body.darkTheme footer .myInfo:hover .myName{
+    color:hwb(0 83% 17%);
+    font-weight: 400;
+}
+
+.language-wrapper img:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+}
+
+body.darkTheme #languageSelector:hover{
+    font-weight: 400;
+    color: hwb(0 100% 17%);
+}
+
+body.darkTheme .disabled label:hover{
+    color:hwb(0 83% 100%);
+
+}

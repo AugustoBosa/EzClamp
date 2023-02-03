@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Ez Clamp(...)</title>
+    <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="stylesheet" href="./src/css/darkTheme.css">
+
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,700&display=swap" rel="stylesheet">
+
+    <!-- JS Scripts -->
+    <script src="./src/js/index.js" defer type="module"></script>
+
+</head>
+
+<body>
+
+    <div id="theme" class="theme">
+        <div id="lightMode" class="screenMode ">
+          <img src="./src/images/sun.png" alt="">
+        </div> 
+    
+        <div id="darkMode" class="screenMode hidden">
+             <img src="./src/images/moon.png" alt="">
+        </div>
+    </div>
+
+        <main>
+           
+                <header>
+                    <img src="./src/images/favicon.png" alt="">
+                    <h1>Ez Clamp(...)</h1>
+                </header>
+        
+                <div id="settings" class="settings hidden">
+
+                    <div class="options-wrapper ">
+                        <div class="unit-options">
+                            <label for="unitSelector">
+                                <span class="EN">Clamp Unit:</span>
+                                <span class="PT disabledLanguage">Unid. do Clamp:</span>
+                            </label>
+                            <select id="unitSelector">
+                                <option value="px" selected>Pixel</option>
+                                <option value="rem">Rem</option>
+                            </select>
+                        </div>
+
+                        <div class="unit-options disabled" id="pxToRemOptions">
+                            <label for="pxToRem" >1 rem =</label>
+                            <input id="pxToRem" type="text" placeholder="10" disabled>
+                            <p class= >px</p>
+                        </div>
+                    </div>
+
+                    <div class="options-wrapper">
+                        <div>
+                            <label for="varID">
+                                <span class="EN">Variable ID</span>
+                                <span class="PT disabledLanguage">ID da Variável</span>
+                            </label>
+                            <input id="varID"type="text" placeholder="var-Id">
+                        </div>
+        
+                        <div>
+                            <label for="CSSSelector">
+                                <span class="EN">CSS Selector</span>
+                                <span class="PT disabledLanguage">Seletor CSS</span>
+                            </label>
+                            <input id="CSSSelector"type="text" placeholder="#id, .class, TagName">
+                        </div>
+
+                        <div>
+                            <label for="CSSProperty">
+                                <span class="EN">CSS Property</span>
+                                <span class="PT disabledLanguage">Propiedade CSS</span>
+                            </label>
+                            <input id="CSSProperty"type="text" placeholder="font-size, gap, margin...">
+                        </div>
+                    </div>
+                   
+                </div>
+
+           
+    
+                <form>
+                    
+                    <div class="formSection">
+    
+                        <p>clamp(min, val, max)  
+                            <span class="pxUnit EN">in pixels</span>
+                            <span class="pxUnit PT disabledLanguage">em pixels</span>
+                            <span class="remUnit hidden EN">in Rem</span>
+                            <span class="remUnit hidden PT disabledLanguage">em Rem</span>
+                            <button id="gearBtn"> 
+                                <img src="./src/images/gear.png" alt="image of a gear">
+                            </button>
+                        </p>         
+        
+                        <div class="values-wrapper">
+                            <div>
+                                <label for="clampMinValue">min</label>
+                                <input type="text" id="clampMinValue">
+                            </div>
+                
+                            <div>
+                                <label for="clampMaxValue">max</label>
+                                <input type="text" id="clampMaxValue">
+                            </div>
+                        </div>
+    
+                    </div>
+                   
+                    <div class="formSection">
+    
+                        <p>
+                            <span class="EN">Viewport Size in pixels</span>
+                            <span class="PT disabledLanguage">Tamanho da Viewport em pixels</span>
+                        </p>
+        
+                        <div class="values-wrapper">
+                            <div>
+                                <label for="vpMinValue"> 
+                                    <span class="EN">Start</span>
+                                    <span class="PT disabledLanguage">Inicial</span>
+                                    </label>
+                                <input type="text" id="vpMinValue">
+                            </div>
+                
+                            <div>
+                                <label for="vpMaxValue">
+                                    <span class="EN">End</span>
+                                    <span class="PT disabledLanguage">Final</span>
+                                </label>
+                                <input type="text" id="vpMaxValue">
+                            </div>
+                        </div>
+    
+                    </div>
+            
+                    <button id="getCode" class="getCode">
+                            <span class="EN">Get Code</span>
+                            <span class="PT disabledLanguage">Gerar Código</span>
+                       </button>
+
+                </form>
+                
+                <div class="output-wrapper">
+                    <div class="output-screen" id="output-screen">
+                            <pre id="output" class="output hidden"></pre>
+                            <span class="startMsg EN">Fill up the data inputs above and click Get Code.</span>
+                            <span class="startMsg PT disabledLanguage">Preencha os campos acima e clique Gerar Código.</span>  
+                            <span class=" errorMsg EN hidden" >ERROR! </br> One or more inputs are not valid.</span>
+                            <span class=" errorMsg PT disabledLanguage hidden">ERRO! </br> Um ou mais campos possuem valores inválidos.</span>    
+                            
+                            
+                        
+
+                        <button id="copyBtn"><img src="./src/images/copy.png" alt="copy button"></button>
+                    </div>
+                </div>
+                
+        
+                <footer>
+
+                    <div class="myInfo">
+                        <p>           
+                            <span class="EN">made by</span>
+                            <span class="PT disabledLanguage">feito por</span> 
+                            <span class="myName">Augusto Bosa</span> - 
+                        </p>
+    
+                        <div class="links">
+                            <a target="_blank" href="https://www.linkedin.com/in/augusto-bosa/">
+                                <img src="./src/images/linkedin.png" alt="LinkedIn Link">
+                            </a> 
+                            
+                            <a target="_blank" href="https://github.com/AugustoBosa">
+                                <img src="./src/images/github.png" alt="GitHub Link">
+                            </a>
+                        </div>
+                    </div>
+                 
+
+                    <div id="otherOptions" class="otherOptions">
+                        <div class="language-wrapper"> 
+                            <label for="languageSelector">
+                                <img src="./src/images/flag-us.png" class="EN" alt="">
+                                <img src="./src/images/flag-br.png" class="PT disabledLanguage" alt="">   
+                            </label>
+
+                            <select name="" id="languageSelector" class="languageSelector">
+                                <option value="EN" selected>en-us</option>
+                                <option value="PT">pt-br</option>
+                            </select>
+                        
+                        </div>
+                       
+                        <a href="https://github.com/AugustoBosa/EzClamp/blob/main/README.md" target="_blank">
+                            <img src="./src/images/info.png" alt="">
+                            
+                        </a>
+                        
+                    </div>
+                    
+
+                </footer>
+            
+    </main>
+    
+</body>
+
+</html>
+
+
+
