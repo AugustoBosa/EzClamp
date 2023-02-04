@@ -1,7 +1,7 @@
 # Ez Clamp(...)
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/AugustoBosa/EzClamp/blob/main/README.pt-br.md)
 
-Ez Clamp(...) is a tool designed to help with the clamp function in CSS, writing for the user a CSS code based on the desired clamp min and max values, and the screen size variation. This code ensures a fluid transition for responsive layouts and makes them consistent in any screen size.
+Ez Clamp(...) is a tool designed to help with the clamp function in CSS, writing for the user a CSS code based on the desired clamp min and max values and the screen size variation. This code ensures a fluid transition for responsive layouts and makes them consistent in any screen size.
 
 
 ## :card_index: Table of contents
@@ -49,7 +49,7 @@ To change the language use the selector under the current language flag, on the 
 ## :hammer_and_wrench: How it Works
 EzClamp(..) creates 2 variables:
   * DiffViewport is the difference between the current screen width and the start point.
-  * The second one is a variable that multiplies the DiffViewport by the ratio between the clamp and screen size ranges ((ClampMax-ClampMin)/(ScreenMax-ScreenMin)), resulting in the proportional increase in the clamp min values based on the DiffViewport value.
+  * The second one is a variable that multiplies the DiffViewport by the ratio between the clamp and screen size ranges ((ClampMax-ClampMin)/(ViewportMax-ViewportMin)), resulting in the proportional increase in the clamp min values based on the DiffViewport value.
   
 Then it writes a CSS code storing the variables on the :root and applying a clamp on the CSS Property and Selector with the second variable created used to calculate de fluctuating value.
 
