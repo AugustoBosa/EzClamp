@@ -1,5 +1,5 @@
 # Ez Clamp(...)
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/AugustoBosa/EzClamp/main/README.pt-br.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/AugustoBosa/EzClamp/blob/main/README.pt-br.md)
 
 Ez Clamp(...) is a tool designed to help with the clamp function in CSS, wrinting for the user a CSS code based on the desired clamp min and max values, and the screen size variation. This code ensures a fluid transition for responsive layouts and makes them consistent in any screen size.
 
