@@ -66,7 +66,7 @@ EzClamp(..) is developed with:
 ## :scroll: About EzClamp(..)
 I was constantly annoyed with the clamp function while developing projects as a begginer, no matter what I did, my responsive layout was constantly disrupted by fonts growing faster than the space between elements and other behaviors like this. So I decided it was time to spend some time studying that specific function, crunch its numbers, and formulate a way that would make it behave the way I wanted it to. A few minutes later the math was done and I was ready do apply this new method, but soon realized the work of redoing the math every time was too time consuming, so EzClamp(..) was created to simplify that.
 
-After a few days of polishing and it is finally deployed (2023/03/02) and ready to help anyone with the same problems that I once had.
+After a few days of polishing it is finally deployed (2023/03/02) and ready to help anyone with the same problems that I once had.
 
 <a name="contact"></a>
 ## 	:mailbox_with_mail: Contact Info
