@@ -51,7 +51,7 @@ Para alterar o idima use o seletor sob a bandeira, no canto direito do rodapé.
 ## :hammer_and_wrench: Como Funciona
 EzClamp(..) cria 2 variáveis:
   * DiffViewport é a diferença entre a tela atual e o tamanho de viewport inicial.
-  * TA segunda é uma variável que multiplica a DiffViewport pela razão entre as variações do clamp e viewport.((ClampMax-ClampMin)/(ScreenMax-ScreenMin)), resultando no incremento proporcional ao valor mínimo do clamp baseado no valor da DiffViewport.
+  * TA segunda é uma variável que multiplica a DiffViewport pela razão entre as variações do clamp e viewport.((ClampMax-ClampMin)/(ViewportMax-ViewportMin)), resultando no incremento proporcional ao valor mínimo do clamp baseado no valor da DiffViewport.
   
 Então ele escreve um código CSS armazenando as variáveis no :root e aplicando um clamp no Seletor e Propriedade CSS, utilizando a segunda variável para determinar o valor flutuante do clamp.
 
