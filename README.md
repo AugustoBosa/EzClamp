@@ -11,7 +11,7 @@ Ez Clamp(...) is a tool designed to help with the clamp function in CSS, wrintin
 * [:hammer_and_wrench:How it Works](#howWork)
 * [:computer:Technologies](#tech)
 * [:scroll:About EzClamp(...)](#about)
-
+* [:mailbox_with_mail:Contact Info](#contact)
  
  
 <a name="how-to-use"></a>
