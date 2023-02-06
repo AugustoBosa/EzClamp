@@ -38,7 +38,7 @@ O código gerado armazena ambas as variáveis no :root para melhor organização
 Todos os campos são opcionais, você não precisa deles para gerar seu código.
    * Unidade do Clamp - Aqui você escolhe qual unidade quer utilizar no clamp, pixel ou rem. Se rem for selecionado o campo ao lado é habilitado, permitindo que você informe quantos pixels são o equivalente a 1 rem no seu projeto, se nenhum for informado será automaticamente usado 1rem=10pixels.
    * ID da Variável  - Informe o nome que você quer utilizar para a variável utilizada para o cálculo do valor proporcional ao tamanho da tela. (Se deixado em branco um placeholder será utilizado)
-   * Seletor CSS - Iforme o Seletor CSS que receberá o clamp. ex.: #id, .class, TagName (Se deixado em branco um placeholder será utilizado)
+   * Seletor CSS - Informe o Seletor CSS que receberá o clamp. ex.: #id, .class, TagName (Se deixado em branco um placeholder será utilizado)
    * Propriedade CSS - Iforme a Propriedade CSS que receberá o clamp. ex.: font-size, gap, margin, padding...(Se deixado em branco um placeholder será utilizado)
 
 <a name="language"></a>
