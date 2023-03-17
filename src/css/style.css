@@ -66,9 +66,7 @@ body{
 }
 
 main{
-/*     background-color: var(--main-color); */
-    
-background-color: blue;
+    background-color: var(--main-color);
     max-width: var(--card-size);
     min-width: 250px;
 
