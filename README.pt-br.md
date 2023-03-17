@@ -5,6 +5,10 @@
 
 Ez Clamp(...) é uma ferramenta desenvolvida para auxiliar no uso da funcção CSS clamp, escrevendo para o usuário um código em CSS baseado nos valores máximo e mínimo do clamp e da variação do tamanho da tela. O código garante transições fluidas e layouts responsivos consistentes em qualquer tamanho de tela.
 
+Confira em funcionamento em:
+
+https://augustobosa.github.io/EzClamp/
+
 
 ## :card_index: Conteúdo
 * [:question:Como Usar](#how-to-use)
